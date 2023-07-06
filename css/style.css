@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+.container {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    width: calc(100% - 2rem);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.content .join {
+    padding: 1.9375rem 1.5rem 2.25rem;
+    /* padding-bottom: 2.8125rem; */
+    background-color: #fff;
+}
+.content .join h3 {
+    font-size: 1.1875rem;
+    color: hsl(179, 62%, 43%);
+}
+.content .join h5 {
+    font-size: 0.9375rem;
+    padding: 1.875rem 0 1.5rem;
+    color: hsl(71, 73%, 54%);
+}
+.content .join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8;
+}
+.content p {
+    font-size: 0.875rem;
+}
+.content .sub, .content .why {
+    padding: 1.75rem 1.5rem 1.5rem;
+}
+.content .sub {
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+.content .sub h3 {
+    font-size: 1.1875rem;
+    color: #fff;
+}
+.content .sub p {
+    color:hsl(204, 43%, 93%);
+    padding: 1rem 0 0.875rem;
+}
+.content .sub p span {
+    font-size: 1.5625rem;
+    color: #fff;
+}
+.content .sub .access {
+    color: #fff;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.content .sub .btn {
+    background-color: hsl(71, 73%, 54%);
+    font-size: 0.875rem;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    padding: 13px 0;
+    border-radius: 5px;
+    border: 1px solid hsl(71, 73%, 54%);
+    transition: background-color 200ms ease-in-out;
+}
+.content .sub .btn:hover {
+    cursor: pointer;
+}
+.content .why {
+    background-color: #4ABEBD;
+}
+.content .why h3 {
+    font-size: 1.1875rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+.content .why p {
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5;
+}
+.attribution {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 636px;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content .join {
+        width: 100%;
+        padding-bottom: 2.8125rem;
+    }
+    .content .join h3 {
+        font-size: 1.5rem;
+    }
+    .content .join p {
+        width: 500px;
+    }
+    .content .join h5 {
+        font-size: 1.125rem;
+        padding: 1.75rem 0 1.125rem;
+    }
+    .content .join, .content .sub, .content .why {
+        padding-top: 2.8125rem;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+    .content .sub h3, .content .why h3{
+        font-size: 1.25rem;
+    }
+    .content .sub .btn {
+        padding: 15px 0;
+    }
+    .content .sub .btn:hover {
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .content .sub, .content .why {
+        width: 50%;
+        padding-bottom: 2.5rem;
+    }
+    .content .why h3 {
+        padding-bottom: 1rem;
+    }
+}
